@@ -1,0 +1,46 @@
+from machine import Pin,PWM
+from buzzer import Music
+from utime import sleep
+
+pwm = PWM(Pin(27))
+mu = Music(pwm)
+
+while True:
+    mu.music(4)
+    sleep(0.25)
+    mu.music(0)
+    sleep(0.1)  
+    mu.music(4)
+    sleep(0.25)   
+    mu.music(0)
+    sleep(0.1)  
+    mu.music(4)
+    sleep(0.5)  
+    mu.music(0)
+    sleep(0.1)
+    
+    mu.music(4)
+    sleep(0.25) 
+    mu.music(0)
+    sleep(0.1)
+    mu.music(4)
+    sleep(0.25)
+    mu.music(0)
+    sleep(0.1) 
+    mu.music(4)
+    sleep(0.5)   
+    mu.music(0)
+    sleep(0.1)
+     
+    mu.music(4)
+    sleep(0.25)
+    mu.music(6)
+    sleep(0.25)
+    mu.music(2)
+    sleep(0.35)
+    mu.music(3)
+    sleep(0.15) 
+    mu.music(4)
+    sleep(1)  
+    mu.music(0)
+    sleep(0.1)
